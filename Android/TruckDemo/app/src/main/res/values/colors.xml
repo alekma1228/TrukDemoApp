@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+
+    <color name="mapboxPink">#ee4e8b</color>
+    <color name="mapboxYellow">#d9d838</color>
+    <color name="mapboxRed">#b43b71</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="red">#bf0f24</color>
+    <color name="red_dark">#e55353</color>
+    <color name="white">#feffff</color>
+    <color name="white_dark">#f5f5f5</color>
+    <color name="blue">#0092dd</color>
+    <color name="blue_dark">#007ab9</color>
+    <color name="blue_light">#1ea7fe</color>
+    <color name="blue_light_transparant">#111ec7fe</color>
+    <color name="gray_light">#eeeeee</color>
+    <color name="gray">#bbbbbb</color>
+    <color name="orange">#ff6000</color>
+    <color name="black">#1d1d1d</color>
+    <color name="black_light">#262626</color>
+    <color name="yellow">#fcbc00</color>
+    <color name="facebook_color">#4061a8</color>
+    <color name="google_color">#dd4b39</color>
+    <color name="green">#539140</color>
+    <color name="black_transparent">#cc1d1d1d</color>
+    <color name="main_bg_color">#e8e8f2</color>
+</resources>

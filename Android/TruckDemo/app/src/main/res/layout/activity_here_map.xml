@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <fragment
+        class="com.here.android.mpa.mapping.SupportMapFragment"
+        android:id="@+id/mapfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/naviCtrlButton"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:text="Start navigation"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearButton"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:text="Reset"
+            android:padding="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

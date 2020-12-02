@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theappineer.truckdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--
+         Developers should put application credentials here.To obtain them, please register the application
+         at https://developer.here.com/develop/mobile-sdks
+        -->
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="b0edKxFQwXgjS53kgVfv" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="ziNM-jvkm5QnjYL3T7z6zQ" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="RbSKEABqwlYyv52gFYfcobPnT/YzxUFND5G/V+4yfyCAk1d13kzI65WHJzhY5aQAswDU+VW+Gz2buD+tfXIM/UHjB7kd+lPCBImjx0n3ipNhH/INbph5GXkxhGPKV+Qpi31RNNwkXlxRCJv6+AKF7iXJfFqVP3JfwrirHCDS92itIwDF1xkA22bDDv1rlR58oPWWPr+VAQhJjLxDo1SAs3FPEFwFn7xRNFReAS1vNdt2RecLaBTO/11iGUR+UMqk/veW+3BFAdNKRBShW0sDeIJFQCQKEaWQNjQoMtmdCc97Imp4NBqmIslYGnSj/JAoV29z+9Aa019Twuafe/MjgUfka2uKFQKEjEbqlhBpPrnyjVJ5nkfYS68tTRPf+X2JnmvKZJMJHYBEHx1cXvivLkhvDPToro8DIc1sJd3JB6ARFsWQkccI75ByPW47TZPGb/HMHm2V7KCIfjUZvi9DhAeLaRnvMQPWm0Wgl/JXmPpMBtj6NB1KrL7UZxOOBMnkSxhfSmF5MpMqGM/wvEq8rNz57q9NkBeFH7JFh6cpYRox/D7Ztub+XDIkgy1eu/QrdNKejJZpYzIPBNPuONsGL0seQxrro9Cbgqw4BFTlhD+N/Dw3ibf/sdbjI4STOm1Z6ETrMGc7Oe0K7qd3nvPgQ3ezY+i4KE50LldYVgKEStg=" />
+        <meta-data
+            android:name="INTENT_NAME"
+            android:value="TruckDemoIntent" />
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="false"
+            android:label="TruckDemoMapService">
+            <intent-filter>
+                <action android:name="TruckDemoIntent" />
+            </intent-filter>
+        </service>
+        <service android:name=".here.ForegroundService" />
+
+        <activity
+            android:name=".ui.activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MapBoxNavigationActivity"></activity>
+    </application>
+
+</manifest>

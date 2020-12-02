@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "804090176099",
+    "firebase_url": "https://truck-demo-b338f.firebaseio.com",
+    "project_id": "truck-demo-b338f",
+    "storage_bucket": "truck-demo-b338f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804090176099:android:9134236be7900655",
+        "android_client_info": {
+          "package_name": "com.theappineer.truckdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804090176099-hc7jb7n87kqkbu1k9qcps5ahfc3r4mq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.theappineer.truckdemo",
+            "certificate_hash": "fd601e1876f3a87c2808d4878f42bb950623e799"
+          }
+        },
+        {
+          "client_id": "804090176099-mh0u4nis9qvggul4ki094jtl35vg8pq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfjIPMGGNXZWDCpFkQ1Xq5VohjpXbDMOA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804090176099-mh0u4nis9qvggul4ki094jtl35vg8pq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
